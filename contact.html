@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Company - Kontak</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="welcome.html" class="logo">
+                <i class="fas fa-cube"></i>
+                <span>MJ Company</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="highlight" id="userWelcomeNav"></a></li>
+                    <li><a href="welcome.html">Home</a></li>
+                    <li><a href="profile.html">Profil Kami</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contact-hero">
+        <div class="hero-content">
+            <h1>Hubungi Kami</h1>
+            <p>Kami siap membantu Anda dengan segala kebutuhan teknologi bisnis Anda</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="contact-container">
+            <!-- Informasi Kontak -->
+            <div class="contact-info animate">
+                <h2><i class="fas fa-info-circle"></i> Informasi Kontak</h2>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Alamat</h3>
+                        <p>Jl. Teknologi No. 123<br>Malang Jawa Timur<br>Indonesia</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Telepon</h3>
+                        <p>+62 858-5028-8189</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>jayanataa24@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Jam Operasional</h3>
+                        <p>Senin - Jumat: 08:00 - 17:00<br>Sabtu: 08:00 - 12:00</p>
+                    </div>
+                </div>
+                
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i>
+                    <p>Peta Lokasi Perusahaan</p>
+                    <div class="map-frame">
+                        <p><i class="fas fa-building"></i> Gedung MJ Company</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Kontak -->
+            <div class="contact-form animate delay-1">
+                <h2><i class="fas fa-paper-plane"></i> Kirim Pesan</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap *</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon</label>
+                        <input type="tel" id="phone" name="phone">
+                        <div class="error-message" id="phoneError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subjek *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Pilih Subjek</option>
+                            <option value="informasi">Informasi Produk</option>
+                            <option value="dukungan">Dukungan Teknis</option>
+                            <option value="kerja-sama">Kerja Sama</option>
+                            <option value="karir">Karir</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                        <div class="error-message" id="subjectError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Pesan *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Saya ingin menerima newsletter dari MJ Company</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+
+                <!-- Hasil Form Submission -->
+                <div id="formResult" class="form-result"></div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section animate delay-2">
+            <h2><i class="fas fa-question-circle"></i> Pertanyaan yang Sering Diajukan</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Bagaimana cara mendapatkan penawaran produk?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Anda dapat mengisi formulir kontak di atas dengan subjek "Informasi Produk" atau menghubungi kami langsung melalui telepon. Tim kami akan menghubungi Anda dalam 1-2 hari kerja.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Apakah MJ Company menyediakan layanan konsultasi?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Ya, kami menyediakan layanan konsultasi teknologi untuk bisnis Anda. Silakan pilih subjek "Kerja Sama" pada formulir kontak untuk informasi lebih lanjut.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Bagaimana proses support teknis?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Untuk support teknis, Anda dapat mengirim email ke support@mjcompany.co.id atau menghubungi nomor telepon support. Response time maksimal 4 jam pada jam kerja.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <i class="fas fa-cube"></i>
+                <span>MJ Company</span>
+            </div>
+            <p>Innovating for a better digital future</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2023 MJ Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
